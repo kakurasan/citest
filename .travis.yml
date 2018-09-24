@@ -1,0 +1,7 @@
+language: shell
+
+os:
+  - linux
+
+script:
+  - find ~/virtualenv/
