@@ -1,0 +1,9 @@
+language: shell
+
+os:
+  - linux
+  - osx
+
+script:
+  - printf "\357\273\277" | iconv -f UTF-8 -t UTF-16LE > out.reg
+  - sha256sum out.reg
